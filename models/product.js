@@ -2,12 +2,14 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var productSchema = new Schema({
-	name: String,
+	code: String,
+	type: String,
 	manufacturer: String,
-	productCode: String,
-	description: String,
-	size: String,
+	name: String,
 	style: String,
-	price: String,
-
-})
+	colour: String,
+	size: String,
+	description: String,
+	price: Number,
+	imageUrl: String
+});
